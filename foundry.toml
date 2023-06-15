@@ -2,5 +2,10 @@
 src = "src"
 out = "out"
 libs = ["lib"]
+remappings = ['@chainlink/contracts/=lib/chainlink-brownie-contracts/contracts/']
+ffi = true 
+#如果启用则调用任意命令。ffi
+# 这个参数可能是开启对外部函数接口（Foreign Function Interface，FFI）的支持，以便在代码中调用外部库的函数
+#通常建议将此作弊代码用作最后的手段，并且默认情况下不要启用它，因为任何可以更改项目测试的人都可以在运行测试的设备上执行任意命令。
 
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config
