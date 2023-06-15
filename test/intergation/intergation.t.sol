@@ -25,7 +25,7 @@ contract IntegrationsTest is StdCheats, Test {
 
     function setUp() external {
         FundMeDeploy deployer = new FundMeDeploy();
-        fundMe = deployer.run();
+        (fundMe,helperConfig) = deployer.run();
         vm.deal(USER, STARTING_USER_BALANCE);
     }
 
